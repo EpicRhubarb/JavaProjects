@@ -21,139 +21,85 @@ public class ChangeCalc {
 		System.out.println("Please enter the amount:");
 
 		float change = myInput.nextFloat();
+		float a;
+		a = 0;
 
-		System.out.print(df.format(Math.floor((change / 100))) + " hundred dollar bill(s), ");
+		System.out.print(df.format(Math.floor((change / 100))) + " hundred dollar bill(s), "); //for hundred dollar bills 
 		change %= 100;
-
-			float a;
-			a = 0;
 			while( !( (a <= change) || (a > (change - 100)) ))
 				{
 					a = a + 100;
 				}
-		
-		//for hundred dollar bills ^
 
-		System.out.print(df.format(Math.floor((change / 50))) + " fifty dollar bill(s), ");
+		System.out.print(df.format(Math.floor((change / 50))) + " fifty dollar bill(s), "); //for fifty dollar bills 
 		change %= 50;
-		
-			float b;
-			b = 0;
-			while( !( (b <= change) || (b > (change - 50)) ))
+			while( !( (a <= change) || (a > (change - 50)) ))
 				{
-					b = b + 50; 
+					a = a + 50; 
 				}
-		
-		//for fifty dollar bills ^
 
-		System.out.print(df.format(Math.floor((change / 20))) + " twenty dollar bill(s), ");
+		System.out.print(df.format(Math.floor((change / 20))) + " twenty dollar bill(s), "); //for twenty dollar bills
 		change %= 20;
-		
-			float c;
-			c = 0;
-			while( !( (c <= change) || (c > (change - 20)) ))
+			while( !( (a <= change) || (a > (change - 20)) ))
 				{
-					c = c + 20;
+					a = a + 20;
 				}
-		
-		//for twenty dollar bills ^
 
-		System.out.print(df.format(Math.floor((change / 10))) + " ten dollar bill(s), ");
+		System.out.print(df.format(Math.floor((change / 10))) + " ten dollar bill(s), "); //for ten dollar bills 
 		change %= 10;
-		
-			float d;
-			d = 0;
-			while( !( (d <= change) || ( d > (change - 10)) ))
+			while( !( (a <= change) || ( a > (change - 10)) ))
 				{
-					d = d + 10;
+					a = a + 10;
 				}
-		
-		//for ten dollar bills ^
 
-		System.out.print(df.format(Math.floor((change / 5))) + " five dollar bill(s), ");
+		System.out.print(df.format(Math.floor((change / 5))) + " five dollar bill(s), "); //for five dollar bills
 		change %= 5;
-		
-			float e;
-			e = 0;
-			while( !( (e <= change) || (e > (change - 5)) ))
+			while( !( (a <= change) || (a > (change - 5)) ))
 				{
-					e = e + 5;
+					a = a + 5;
 				}
-		
-		//for five dollar bills ^
 
-		System.out.print(df.format(Math.floor((change / 2))) + " toonie(s), ");
+		System.out.print(df.format(Math.floor((change / 2))) + " toonie(s), "); //for toonies
 		change %= 2;
-		
-			float f;
-			f = 0;
-			while( !( (f <= change) || (f > (change - 2)) ))
+			while( !( (a <= change) || (a > (change - 2)) ))
 				{
-					f = f + 2;
+					a = a + 2;
 				}
 		
-		//for toonies ^
-
-		System.out.print(df.format(Math.floor((change / 1))) + " loonie(s), ");
+		System.out.print(df.format(Math.floor((change / 1))) + " loonie(s), "); // for loonies
 		change %= 1;
-		
-			float g;
-			g = 0;
-			while( !( (g <= change) || (g > (change - 1)) ))
+			while( !( (a <= change) || (a > (change - 1)) ))
 				{
-					g = g + 1;
+					a = a + 1;
 				}
-		
-		// for loonies ^
 
-		System.out.print(df.format(Math.floor((change / 0.25))) + " quarter(s), ");
+		System.out.print(df.format(Math.floor((change / 0.25))) + " quarter(s), "); //for quarters
 		change %= 0.25;
-		
-			float h;
-			h = 0;
-			while( !( (h <= change) || (h > (change - 0.25)) ))
+			while( !( (a <= change) || (a > (change - 0.25)) ))
 				{
-					h = h + 25;
+					a = a  + 25;
 				}
-		
-		
-		//for quarters ^
 
-		System.out.print(df.format(Math.floor((change / 0.10))) + " dime(s), ");
+		System.out.print(df.format(Math.floor((change / 0.10))) + " dime(s), "); //for dimes 
 		change %= 0.10;
-		
-			float i;
-			i = 0;
-			while( !( (i <= change) || (i > (change - 0.10)) ))
+			while( !( (a <= change) || (a > (change - 0.10)) ))
 				{
-					i = i + 10;
+					a = a + 10;
 				}
-		
-		//for dimes ^
 
-		System.out.print(df.format(Math.floor((change / 0.05))) + " nickel(s), ");
+		System.out.print(df.format(Math.floor((change / 0.05))) + " nickel(s), "); //for nickels
 		change %= 0.05;
-			
-			float j;
-			j = 0;
-			while( !( (j <= change) || (j > (change - 0.05)) ))
+			while( !( (a <= change) || (a > (change - 0.05)) ))
 				{
-					j = j + 5;
+					a = a + 5;
 				}
-		
-		//for nickels ^
 
-		System.out.print(df.format(Math.floor((change / 0.01))) + " penny(ies). ");
+		System.out.print(df.format(Math.floor((change / 0.01))) + " penny(ies). "); //for pennies
 		change %= 0.01;
-
-			float k;
-			k = 0;
-			while( !( (k <= change) || (k > (change - 0.01)) ))
+			while( !( (a <= change) || (a > (change - 0.01)) ))
 				{
-					k = k + 1;
+					a = a + 1;
 				}
-		
-		//for pennies ^
 			
 			System.out.print("\nDo you want to continue? <y/n>");
 			char userChar = myInput.next().charAt(0);
