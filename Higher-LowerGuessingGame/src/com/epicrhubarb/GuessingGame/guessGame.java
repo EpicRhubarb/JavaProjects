@@ -1,4 +1,4 @@
-package com.gmail.mbardal32.GuessingGame;
+package com.epicrhubarb.GuessingGame;
 import java.util.Random;
 import java.util.Scanner;
 
