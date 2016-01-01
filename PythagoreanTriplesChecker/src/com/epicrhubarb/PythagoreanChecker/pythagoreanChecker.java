@@ -10,9 +10,16 @@ public class pythagoreanChecker {
 		Scanner input = new Scanner(System.in);
 		
 		while(true) {
+			
+		System.out.print("Enter the lengths of your triangle (Preferably a first, then b, then c). This program is used to find pythagorean triples. \n");
 		
+		System.out.println("a:");
 		int a = input.nextInt();
+		
+		System.out.println("b:");
 		int b = input.nextInt();
+		
+		System.out.println("c:");
 		int c = input.nextInt();
 		
 		if(a > c){
